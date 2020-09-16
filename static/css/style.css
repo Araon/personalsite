@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins',sans-serif;
+  color: #222222;
+  background-color: #ffffff;
+}
+.navbar-toggler-icon {
+  color: black;
+}
+.navbar-nav li {
+  -webkit-transition: all .7s ease-out;
+  transition: all .7s ease-out;
+}
+.navbar {
+  padding: .8rem;
+  
+}
+.navbar-nav li {
+  padding-left: 20px;
+}
+
+.nav-link {
+  font-size: 1.2em !important;
+}
+
+.navbar-brand{
+  font-size: 1.5em !important;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 1em;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #1a1919 !important;
+  transition: background-color 200ms linear;
+}
+
+
+.jumbotron {
+  background-image: url('../img/images/home.png');
+  height: 100%;
+  width: auto;%;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  border-radius: 0px !important;
+  margin-bottom: 0em !important;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: 20px;
+  
+}
+.jumbotron h6{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.name {
+  margin-top: 310px;
+  margin-left: 60px;
+
+}
+.d {
+  margin-left: 60px;
+
+}
+.lead {
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  width: 75%;
+}
+
+.social a {
+  font-size: 3.5em;
+  padding: 3rem;
+}
+.fa-instagram {
+  color: #fb3958;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.fa-github {
+  color: #211F1F;
+}
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+  color: #d5d5d5;
+}
+
+footer {
+  background-color: #222222;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+
+hr.light {
+  border-top: 1px solid #d5d5d5; 
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.footer-text {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homeSouth {
+  text-align: center;
+  position: absolute;
+  left: calc(50% - 54px);
+  top: calc(100% - 120px);
+}
+
+.smoothScrollBtn {
+  color: white;
+  /* margin-top: -20px; */
+  position: relative;
+  border: none;
+  background: none;
+  font-size: 3em;
+}
+
+.smoothScrollBtn:focus {
+  outline: 0;
+}
+
+.stealthLink, .stealthLink:focus, .stealthLink:hover {
+  color: white;
+  outline: 0;
+  text-decoration: none;
+  font-family:'Poppins',sans-serif;
+}
+
+
+
+.learn ul {
+  font-size: large;
+  
+}
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+
+}
+
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+

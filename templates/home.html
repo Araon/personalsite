@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Soumik Ghosh</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar nav-down fixed-top navbar-expand-lg toggle-height navbar-dark navbar-fixed-top" id="navigation">
+	<a class="navbar-brand" href="#">Soumik Ghosh</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmnu">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarmnu">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="/project">Projects</a>
+			</li>
+			<!-- 
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+			-->
+		</ul>
+	</div>
+</nav>
+
+<!--- Image --->
+<div class="jumbotron text-left">
+	<div class="name">
+		<h1>Soumik </h1> 
+		<h1>Ghosh</h1>
+	</div>
+	<br>
+	<div class="d">
+		<h6>Self-learning software and electrical engineering <br> through research & development.</h6>
+	</div>
+</div>
+
+
+<!--Read more button-->
+<div class="homeSouth">
+	<h4><a class="stealthLink subPmin padX0" href="#">Read More</a></h4>
+	<button class="smoothScrollBtn" type="button"><img src="../static/img/assets/Down-Arrow-White.png" width="30"/></button>
+</div>
+
+
+
+<!--- Welcome Section -->
+<div class="container-fluid py-5 bg-dark text-white">
+	<div class="container p-5">
+		<div class="row welcome text-left">
+			<div class="col-10">
+				<h1 class="display-4 text-light">Me?</h1>
+			</div>
+			<hr class="dark">
+			<div class="col-14">
+				<p>I was never the best at academics or sports, I’m just a super curious guy. I usally like to share ideas and theories that interest me. I spend a lot of time building software and electronics, there’s so much more for me to learn. I sometimes document the logic, reasoning, and problems encountered during the process of learning engineering. A combination of innovation and storytelling is what i aspire to do in my life</p>
+			</div>
+		</div>
+	</div>
+	<div class="container p-5">
+		<div class="row">
+			<div class="col-lg-3">
+				<h5>Software Development</h5>
+					<ul>
+						<li>Python/Java automation</li>
+						<li>Low Level/embedded IoT programming</li>
+						<li>Cloud computing and Web Server</li>
+					</ul>
+			</div>
+			<div class="col-lg-3">
+				<h5>Electronics</h5>
+					<ul>
+						<li>UAV/UGV</li>
+						<li>SONAR shoes, An arduino based medical rehabitaion device for visually impaired individuals</li>
+						<li>Audio visualizer, Arduino based</li>
+					</ul>
+			</div>
+			<div class="col-lg-3">
+				<h5>Community</h5>
+					<ul>
+						<li>Open Source projects on Github</li>
+						<li>Discord Community Server</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--- Future prospect -->
+<div class="container-fluid py-5 text-white">
+	<div class="container p-5">
+		<div class="row welcome text-left">
+			<div class="col-14">
+				<h3 class="bg-light text-dark">Future Ventures:</h3>
+				<h6 class="text-dark">(Things i want to learn in the future)</h6>
+			</div>
+			<div class="col-15 text-dark learn" >
+				<ul>
+					<li>Machine Learning / AI</li>
+					<li>Image/Video Processing</li>
+					<li>Encryption</li>
+					<li>Computational biology</li>
+					<li>Black box technology</li>
+					<li>Personal Datacenter / NAS</li>
+					<li>Making Biriyani</li>
+				  </ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--- Cards -->
+<hr class="my-4">
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding">
+		<div class="col-12">
+			<h1>CONNECT</h1>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://www.instagram.com/ara0n/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/in/soumik-ghosh-806b69115/"><i class="fab fa-linkedin"></i></a>
+			<a href="https://github.com/Araon"><i class="fab fa-github"></i></a>
+		</div>
+
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<hr class="light">
+				<h5 class="footer-text">Something Soumik Ghosh made🤙</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
