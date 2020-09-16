@@ -31,9 +31,7 @@ This website is mainly made for learning about HTML, CSS and Javascript
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Flask](https://flask.palletsprojects.com) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
