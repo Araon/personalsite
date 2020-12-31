@@ -1,58 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Soumik Ghosh</title>
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css')}}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" >
-</head>
-<body>
+{% extends "layout.html" %}
 
-<!-- Navigation -->
 
+{% block content %}
 <nav class="navbar nav-down fixed-top navbar-expand-lg toggle-height navbar-dark navbar-fixed-top" id="navigation">
-	<a class="navbar-brand" href="#">Soumik Ghosh</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmnu">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarmnu">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
+				<a class="nav-link" href="/blog">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Code</a>
+			</li>
+			<li class="nav-item">
 				<a class="nav-link" href="/project">Projects</a>
 			</li>
-			<!-- 
 			<li class="nav-item">
-				<a class="nav-link" href="#">Contact</a>
+				<a class="nav-link" href="/resume">Resume</a>
 			</li>
-			-->
 		</ul>
 	</div>
 </nav>
-
 <!--- Image --->
 <div class="jumbotron text-left">
 	<div class="name">
+		<h4 class="font-light pb-2">Hi! I'm</h4>
 		<h1>Soumik </h1> 
 		<h1>Ghosh</h1>
 	</div>
 	<br>
 	<div class="d">
-		<h6>Self-learning software and electrical engineering <br> through research & development.</h6>
+		<h6>
+			and I'm <span class="txt-type" data-wait="1000" data-words='["a Developer.","a Tinker.","a Photographer.","an Editor.","also a Human."]' ></span>
+		</h6>
 	</div>
 </div>
 
 
 <!--Read more button-->
 <div class="homeSouth">
-	<h4><a class="stealthLink subPmin padX0" href="#">Read More</a></h4>
-	<button class="smoothScrollBtn" type="button"><img src="../static/img/assets/Down-Arrow-White.png" width="30"/></button>
+	<h4><a class="stealthLink subPmin padX0" href="#welcome">Read More</a></h4>
+	<button class="smoothScrollBtn" type="button"><a href="#welcome"><img src="../static/img/assets/Down-Arrow-White.png" width="30"/></a></button>
 </div>
 
 
 
 <!--- Welcome Section -->
-<div class="container-fluid py-5 bg-dark text-white">
+<div class="container-fluid py-5 bg-dark text-white" id="welcome">
 	<div class="container p-5">
 		<div class="row welcome text-left">
 			<div class="col-10">
@@ -139,18 +135,14 @@
 		<div class="row text-center">
 			<div class="col-12">
 				<hr class="light">
-				<h5 class="footer-text">Something Soumik Ghosh made🤙</h5>
+				<h5 class="footer-text">Something made by Soumik Ghosh🤙</h5>
 			</div>
 		</div>
 	</div>
 </footer>
 
 
+{% endblock %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script src="{{ url_for('static', filename='js/main.js')}}"></script>
-</body>
-</html>
+
+

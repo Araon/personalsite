@@ -38,10 +38,11 @@ html, body {
 }
 
 
+
 .jumbotron {
   background-image: url('../img/images/home.png');
   height: 100%;
-  width: auto;%;
+  width: auto;
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -54,7 +55,7 @@ html, body {
   letter-spacing: 20px;
   
 }
-.jumbotron h6{
+.jumbotron h5{
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
 }
@@ -73,6 +74,8 @@ html, body {
   font-family: 'Montserrat', sans-serif;
   width: 75%;
 }
+
+
 
 .social a {
   font-size: 3.5em;
@@ -94,7 +97,7 @@ html, body {
 }
 
 footer {
-  background-color: #222222;
+  background-color: rgb(52, 58, 64);
   color: #d5d5d5;
   padding-top: 2rem;
 }
