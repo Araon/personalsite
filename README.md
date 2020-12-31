@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="https://raw.githubusercontent.com/Araon/flaskportfolio/master/araon/static/img/screenshot.jpg" rel="noopener">
  <img width=360px height=240px src="https://raw.githubusercontent.com/Araon/flaskportfolio/master/araon/static/img/screenshot.jpg" alt="Project logo"></a>
 </p>
 
@@ -7,9 +7,8 @@
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
-
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/Naereen/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 </div>
 
 ---
