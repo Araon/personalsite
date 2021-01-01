@@ -11,5 +11,5 @@ $(".homeSouth").click(function() {
       offset = 54;
   }
   $('html,body').animate({
-      scrollTop: $(".aboutMe").offset().top - offset},'slow');
+      scrollTop: $(".welcome").offset().top - offset},'slow');
 });

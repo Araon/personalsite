@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+html,body {
+    height: 100%;
+    width: 100%;
+    color: #222222;
+    background-color: #2e2e2e;
+    background-image: url('../img/images/error.png');
+    background-size: auto;
+    background-position: center;
+    overflow: hidden;
+}
+
+.errortxt {
+    padding-top: 20rem !important;
+    padding-left: 10% !important;
+    padding-right: 20% !important;
+    color: rgb(255, 255, 255);
+}
+
+.errortxt h1{
+    font-size: 85px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.errortxt h2{
+    font-family: 'Major Mono Display', monospace;
+}
+
+.errortxt button {
+    margin-top: 3rem;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    transition-duration: 0.4s;
+}
+
+.errortxt button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
