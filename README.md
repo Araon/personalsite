@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://raw.githubusercontent.com/Araon/flaskportfolio/master/araon/static/img/screenshot.jpg" rel="noopener">
- <img width=390px height=240px src="https://raw.githubusercontent.com/Araon/flaskportfolio/master/araon/static/img/screenshot.jpg" alt="Project logo"></a>
+ <img width=400px height=240px src="https://raw.githubusercontent.com/Araon/flaskportfolio/master/araon/static/img/screenshot.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Personal Website</h3>
