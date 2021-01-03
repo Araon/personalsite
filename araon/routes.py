@@ -1,6 +1,13 @@
-from flask import render_template,url_for
+from flask import render_template,url_for,redirect
 from araon import app
+from araon.forms import LoginForm
 
+
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('error.html'), 404
 
 
 @app.route("/")
@@ -22,6 +29,15 @@ def blog():
 def resume():
     return render_template('resume.html')
 
-@app.errorhandler(404)
-def page_not_found(error):
-    return render_template('error.html'), 404
+
+
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+    form = LoginForm()
+    if form.validate_on_submit():
+        if form.email.data == 'admin@blog.com' and form.password.data == 'password':
+            return redirect(url_for('home'))
+        else:
+            return redirect(url_for('home'))
+    return render_template('login.html', form=form)
