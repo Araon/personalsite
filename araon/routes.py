@@ -1,7 +1,5 @@
 from flask import render_template,url_for,redirect
 from araon import app
-from araon.forms import LoginForm
-
 
 
 
@@ -20,10 +18,6 @@ def home():
 def project():
     return render_template('projects.html')
 
-@app.route("/blog")
-def blog():
-    return "<h1>blog part</h1>"
-
 
 @app.route("/resume")
 def resume():
@@ -32,12 +26,5 @@ def resume():
 
 
 
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        if form.email.data == 'admin@blog.com' and form.password.data == 'password':
-            return redirect(url_for('home'))
-        else:
-            return redirect(url_for('home'))
-    return render_template('login.html', form=form)
+
+
