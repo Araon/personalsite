@@ -11,8 +11,9 @@ code = Blueprint('code',__name__,template_folder="templates",static_url_path='/c
 
 
 
-engine = create_engine('sqlite:///araon/code.db')
+engine = create_engine('sqlite:///araon/site.db')
 Session = scoped_session(sessionmaker(bind=engine))
+
 
 @code.route('/', subdomain = 'code')
 def codehome():
