@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Oh wait</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="{{url_for('blog.static', filename='css/base.css')}}">
+    <link rel="stylesheet" href="{{url_for('blog.static', filename='css/vendor.css')}}">
+    <link rel="stylesheet" href="{{url_for('blog.static', filename='css/main.css')}}">
+
+    <!-- script
+    ================================================== -->
+    <script src="{{url_for('blog.static', filename='js/modernizr.js')}}"></script>
+
+
+</head>
+
+<body>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="/">
+                        <img src="images/logo.svg" alt="oh wait">
+                    </a>
+                </div>
+
+                <!-- toggles -->
+                <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+
+            </div> 
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="current"><a href="/" title="">Home</a></li>
+                    <li class="has-children">
+                        <a href="#0" title="">Authors</a>
+                        <ul class="sub-menu">
+                            {% for post in posts%}
+                            <li><a href="{{ url_for('blog.post', post_id=post.id) }}">{{ post.title }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li><a href="/about" title="">About</a></li>
+                </ul> 
+
+                <ul class="header__social">
+                    <li class="ss-facebook">
+                        <a href="https://facebook.com/">
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="ss-twitter">
+                        <a href="#0">
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="ss-dribbble">
+                        <a href="#0">
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                    <li class="ss-pinterest">
+                        <a href="#0">
+                            <span class="screen-reader-text">Behance</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> 
+
+        </header> 
+
+        <div class="s-content">
+            <div class="masonry-wrap">
+                <div class="masonry">
+                    <div class="grid-sizer"></div>
+                    {% for post in posts %}
+                    <article class="masonry__brick entry format-standard animate-this">
+                        <div class="entry__thumb">
+                            <a href="{{ url_for('blog.post', post_id=post.id) }}" class="entry__thumb-link">
+                                <img src="{{ post.header_img }}" alt="placeholder">
+                            </a>
+                        </div>
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <h2 class="entry__title">{{ post.title }}</h2>
+                                <div class="entry__meta">
+                                    <span class="entry__meta-cat">
+                                       <p>{{ post.author}}</p>
+                                    </span>
+                                    <span class="entry__meta-date">
+                                        <p>{{ post.date_posted.strftime('%B %d, %Y') }}</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    {% endfor %}
+
+                    
+
+                </div> <!-- end masonry -->
+            </div> <!-- end masonry-wrap -->
+        </div> <!-- end s-content -->
+
+
+        <!-- footer
+        ================================================== -->
+        <footer class="s-footer">
+            <div class="row">
+                <div class="column large-full footer__content">
+                    <div class="footer__copyright">
+                        <span>© Copyright Araon</span> 
+                        <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+            </div>
+        </footer>
+
+    </div> <!-- end s-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="{{url_for('blog.static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url_for('blog.static', filename='js/plugins.js')}}"></script>
+    <script src="{{url_for('blog.static', filename='js/main.js')}}"></script>
+
+</body>
