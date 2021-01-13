@@ -21,7 +21,7 @@ def project():
 
 @app.route("/resume")
 def resume():
-    return render_template('resume.html')
+    return redirect("https://drive.google.com/file/d/1t9JxoWBs5MQX-yUwVqJhMf9V3Xq0_Vjl/view?usp=sharing")
 
 
 
