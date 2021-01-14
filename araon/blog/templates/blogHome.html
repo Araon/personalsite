@@ -106,12 +106,14 @@
                     <article class="masonry__brick entry format-standard animate-this">
                         <div class="entry__thumb">
                             <a href="{{ url_for('blog.post', post_id=post.id) }}" class="entry__thumb-link">
-                                <img src="{{ post.header_img }}" alt="placeholder">
+                                <img src="{{ post.header_img }}" alt="">
                             </a>
                         </div>
                         <div class="entry__text">
                             <div class="entry__header">
+                                <a href="{{ url_for('blog.post', post_id=post.id) }}">
                                 <h2 class="entry__title">{{ post.title }}</h2>
+                                </a>
                                 <div class="entry__meta">
                                     <span class="entry__meta-cat">
                                        <p>{{ post.author}}</p>

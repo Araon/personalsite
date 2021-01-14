@@ -22,7 +22,7 @@ class bloginfo(db.Model):
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     author = db.Column(db.String(100), nullable=False, default = 'System')
     content = db.Column(db.Text, nullable=False)
-    header_img = db.Column(db.String(500))
+    header_img = db.Column(db.String(500), default = 'https://source.unsplash.com/1080x1920/?blog')
     
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
