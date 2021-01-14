@@ -28,7 +28,7 @@ def about():
 @blog.route('/post/<int:post_id>', subdomain = 'blog')
 def post(post_id):
     post = bloginfo.query.filter_by(id=post_id).one()
-    return render_template('blogPost.html', post=post)
+    return render_template('blogPost.html', post=post, prev = post_id - 1, nex = post_id + 1)
 
 
 

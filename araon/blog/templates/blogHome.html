@@ -61,7 +61,7 @@
                 <ul class="header__nav">
                     <li class="current"><a href="/" title="">Home</a></li>
                     <li class="has-children">
-                        <a href="#0" title="">Authors</a>
+                        <a href="#0" title="">Recent Posts</a>
                         <ul class="sub-menu">
                             {% for post in posts%}
                             <li><a href="{{ url_for('blog.post', post_id=post.id) }}">{{ post.title }}</a></li>
@@ -130,6 +130,7 @@
                 </div> <!-- end masonry -->
             </div> <!-- end masonry-wrap -->
         </div> <!-- end s-content -->
+ <!-- end entry__pagenav -->
 
 
         <!-- footer
