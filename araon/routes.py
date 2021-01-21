@@ -1,7 +1,5 @@
-from flask import render_template,url_for,redirect
+from flask import render_template,redirect,url_for
 from araon import app
-from werkzeug.exceptions import HTTPException
-
 
 
 @app.errorhandler(404)
@@ -11,11 +9,6 @@ def page_not_found(error):
 @app.errorhandler(500)
 def page_not_found(error):
     return render_template('error.html'), 500
-
-
-
-
-
 
 
 @app.route("/")

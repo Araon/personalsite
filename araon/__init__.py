@@ -1,6 +1,6 @@
 # moiweb\scripts\activate
 
-from flask import Flask
+from flask import Flask,url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_ckeditor import CKEditor
 

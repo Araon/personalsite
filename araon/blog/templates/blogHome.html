@@ -47,7 +47,7 @@
             <div class="header__top">
                 <div class="header__logo">
                     <a class="site-logo" href="/">
-                        <img src="images/logo.svg" alt="oh wait">
+                        <img src="{{url_for('blog.static', filename='images/logo.svg')}}" alt="oh wait">
                     </a>
                 </div>
 
@@ -64,35 +64,13 @@
                         <a href="#0" title="">Recent Posts</a>
                         <ul class="sub-menu">
                             {% for post in posts%}
-                            <li><a href="{{ url_for('blog.post', post_id=post.id) }}">{{ post.title }}</a></li>
+                            <li><a href="{{ url_for('blog.post', post_id=post.id) }}">○ {{ post.title }}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
                     <li><a href="/about" title="">About</a></li>
                 </ul> 
 
-                <ul class="header__social">
-                    <li class="ss-facebook">
-                        <a href="https://facebook.com/">
-                            <span class="screen-reader-text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="ss-twitter">
-                        <a href="#0">
-                            <span class="screen-reader-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="ss-dribbble">
-                        <a href="#0">
-                            <span class="screen-reader-text">Dribbble</span>
-                        </a>
-                    </li>
-                    <li class="ss-pinterest">
-                        <a href="#0">
-                            <span class="screen-reader-text">Behance</span>
-                        </a>
-                    </li>
-                </ul>
 
             </nav> 
 

@@ -90,9 +90,17 @@ html, body {
 .fa-github {
   color: #211F1F;
 }
+.fa-code {
+  color: #651da0;
+}
+.fa-quote-right {
+  color: #3d000f;
+}
 .fa-instagram:hover,
 .fa-linkedin:hover,
-.fa-github:hover {
+.fa-github:hover,
+.fa-code:hover,
+.fa-quote-right:hover {
   color: #d5d5d5;
 }
 
@@ -118,6 +126,10 @@ hr.light {
   position: absolute;
   left: calc(50% - 54px);
   top: calc(100% - 120px);
+}
+
+#welcome {
+  background-color: #1a1919 !important;
 }
 
 .smoothScrollBtn {
