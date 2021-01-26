@@ -32,7 +32,7 @@ def post(post_id):
 
 
 
-@blog.route('/add', subdomain = 'blog')
+@blog.route('/supersecretlinktoaddpost', subdomain = 'blog')
 def add():
     return render_template('blogadd.html')
 

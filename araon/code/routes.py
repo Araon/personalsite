@@ -34,19 +34,8 @@ def post(post_id):
 
 
 
-@code.route('/login', methods=['GET', 'POST'] ,subdomain = 'code')
-def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        if form.username.data == 'test' and form.password.data == 'test':
-            return redirect('/add')
-        else:
-            return redirect('/error')
-    return render_template('about.html')
 
-
-
-@code.route('/add', subdomain = 'code')
+@code.route('/supersecretlinktoaddpost', subdomain = 'code')
 def add():
     return render_template('add.html')
 
