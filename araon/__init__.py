@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'supersecretkey'
 
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # to medicate the warnings of sqlite3
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 
 db = SQLAlchemy(app)
@@ -22,5 +23,4 @@ app.register_blueprint(blog, subdomain='blog')
 from araon import routes
 
 ckeditor = CKEditor(app)
-
 

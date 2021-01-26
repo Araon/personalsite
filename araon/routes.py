@@ -22,6 +22,10 @@ def project():
     return render_template('projects.html')
 
 
+@app.route("/XD")
+def egg():
+    return "<h1>Nice</h1>"
+
 @app.route("/resume")
 def resume():
     return redirect("https://drive.google.com/file/d/1t9JxoWBs5MQX-yUwVqJhMf9V3Xq0_Vjl/view?usp=sharing")
