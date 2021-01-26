@@ -15,17 +15,17 @@ engine = create_engine('sqlite:///araon/site.db')
 Session = scoped_session(sessionmaker(bind=engine))
 
 
-@code.route('/', subdomain = 'code')
+@code.route('/')
 def codehome():
     posts = blogPost.query.order_by(blogPost.date_posted.desc()).all()
     return render_template('index.html', posts=posts)
 
-@code.route('/about', subdomain = 'code')
+@code.route('/about')
 def about():
     return render_template('about.html')
 
 
-@code.route('/post/<int:post_id>', subdomain = 'code')
+@code.route('/post/<int:post_id>')
 def post(post_id):
     post = blogPost.query.filter_by(id=post_id).one()
     return render_template('post.html', post=post,  prev = post_id -1)

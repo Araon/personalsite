@@ -16,8 +16,8 @@ db = SQLAlchemy(app)
 from araon.code.routes import code
 from araon.blog.routes import blog
 #blueprints routes
-app.register_blueprint(code)
-app.register_blueprint(blog)
+app.register_blueprint(code, subdomain='code')
+app.register_blueprint(blog, subdomain='blog')
 
 from araon import routes
 

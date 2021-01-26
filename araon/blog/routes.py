@@ -15,24 +15,24 @@ engine = create_engine('sqlite:///araon/site.db')
 
 Session = scoped_session(sessionmaker(bind=engine))
 
-@blog.route('/', subdomain = 'blog')
+@blog.route('/')
 def bloghome():
     posts = bloginfo.query.order_by(bloginfo.date_posted.desc()).all()
     return render_template('blogHome.html', posts = posts)
 
-@blog.route('/about', subdomain = 'blog')
+@blog.route('/about')
 def about():
     return render_template('blogAbout.html')
 
 
-@blog.route('/post/<int:post_id>', subdomain = 'blog')
+@blog.route('/post/<int:post_id>')
 def post(post_id):
     post = bloginfo.query.filter_by(id=post_id).one()
     return render_template('blogPost.html', post=post, prev = post_id - 1, nex = post_id + 1)
 
 
 
-@blog.route('/supersecretlinktoaddpost', subdomain = 'blog')
+@blog.route('/supersecretlinktoaddpost')
 def add():
     return render_template('blogadd.html')
 
