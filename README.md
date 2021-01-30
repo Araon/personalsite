@@ -17,12 +17,6 @@
     <br> 
 </p>
 
-## 📝 Table of Contents
-
-- [About](#about)
-- [Built Using](#built_using)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -31,10 +25,6 @@ This website is mainly made for learning about HTML, CSS and Javascript
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [Flask](https://flask.palletsprojects.com) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@Araon](https://github.com/Araon) - Idea & Initial work
 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
