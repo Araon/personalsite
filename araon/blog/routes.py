@@ -54,7 +54,7 @@ def addpost():
     session.add(post)
     session.commit()
 
-    return redirect("/add")
+    return redirect("/supersecretlinktoaddpost")
 
 
 
