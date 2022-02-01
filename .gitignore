@@ -2,3 +2,7 @@ moiweb
 __pycache__
 .vscode
 dev
+Documentation/
+araon/blog/postCall.py
+araon/projectService/
+araon/templates/resume.html

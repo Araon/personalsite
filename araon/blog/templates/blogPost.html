@@ -6,8 +6,10 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>A Cup of Reality | {{ post.title}}</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="{{ post.author }}">
+    <meta name="description" content="{{ post.sub_title }}"> 
+    <meta property="og:image" content= "{{ post.header_img }}">
+    <meta property="og:type"  content="article" />
 
     <!-- mobile specific metas
     ================================================== -->

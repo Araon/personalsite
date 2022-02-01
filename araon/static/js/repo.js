@@ -4,6 +4,7 @@ async function getRepos()
     const user_url = "https://api.github.com/users/araon/repos"
     const response = await fetch(user_url)
     const result = await response.json()
+    console.log(result)
     var i;
     for (i = 0; i < result.length; i++) {
         if (result[i]['fork'] === false){
