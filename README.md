@@ -30,4 +30,4 @@ This website is mainly made for learning about HTML, CSS and Javascript
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
 - Hat tip to anyone whose code was used
-
+- Also thanks Internet
